@@ -1,0 +1,65 @@
+.grid-hanzi {
+    font-size: 25px;
+    margin: 0;
+}
+
+.grid-id {
+    font-size: 8px;
+    margin: 0;
+}
+
+.inp-field input {
+    border: 0;
+    outline: 0;
+    height: 5vh;
+    width: 20vw;
+}
+
+.login-text h2 {
+    font-size: 30px;
+}
+
+.login-text h5 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .inp-field input {
+        border: 0;
+        outline: 0;
+        height: 6vh;
+        width: 42vw;
+    }
+
+    .login-text h2 {
+        font-size: 20px;
+    }
+    
+    .login-text h5 {
+        font-size: 15px;
+    } 
+
+    .char-display h2 {
+        font-size: 30px;
+    }
+
+    .char-display h4 {
+        font-size: 25px;
+    }
+
+    .char-display h6 {
+        font-size: 13px;
+    }
+
+    .char-display a {
+        font-size: 13px;
+    }
+
+    .username {
+        font-size: 15px;
+    }
+
+    .logout {
+        font-size: 10px;
+    }
+}
