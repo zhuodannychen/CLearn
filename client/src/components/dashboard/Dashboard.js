@@ -25,7 +25,8 @@ class Dashboard extends Component {
             currentHanzi: "的",
             currentPinyin: "de/dí/dì",
             currentDefinition: "(possessive particle)/of, really and truly, aim/clear",
-            currentLink: "https://dict.naver.com/linedict/zhendict/dict.html#/cnen/search?query=的",
+            currentBaiduLink: "https://baike.baidu.com/item/的",
+            currentLineDictLink: "https://dict.naver.com/linedict/zhendict/dict.html#/cnen/search?query=的",
             currentKnowledge: knowWords,
             tabIndex: 0
         }
@@ -79,7 +80,8 @@ class Dashboard extends Component {
             currentHanzi: CharacterData[index]["hanzi"],
             currentPinyin: CharacterData[index]["pinyin"],
             currentDefinition: CharacterData[index]["definition"],
-            currentLink: "https://dict.naver.com/linedict/zhendict/dict.html#/cnen/search?query="+CharacterData[index]["hanzi"]
+            currentBaiduLink: "https://baike.baidu.com/item/"+CharacterData[index]["hanzi"],
+            currentLineDictLink: "https://dict.naver.com/linedict/zhendict/dict.html#/cnen/search?query="+CharacterData[index]["hanzi"]
         })
     }
 
@@ -176,14 +178,18 @@ render() {
                 </Tabs>
 
                     <div className="col-4" style={{padding: "13px", position: "fixed", top: 0, bottom: 0, right: 0, overflowY: "scroll", background: "#333333"}}>
-                        <h5 style={{marginTop: "10px", color: "#FFFFFF"}}>You know {this.state.count} of 5000 characters</h5>
+                        <h5 className="knowledge-count" style={{marginTop: "10px", color: "#FFFFFF"}}>You know {this.state.count} of 5000 characters</h5>
                         <CharDisplay hanzi={this.state.currentHanzi}
                                      pinyin={this.state.currentPinyin}
                                      definition={this.state.currentDefinition}
-                                     link={this.state.currentLink}/>
+                                     baiduLink={this.state.currentBaiduLink}
+                                     linedictLink={this.state.currentLineDictLink}/>
 
                         <div style={{marginTop: "10px"}}>
-                            <h4 className="username" style={{color: "#FFFFFF"}}>Welcome <b style={{color: "#AAAAAA"}}>{name.split(" ")[0]}</b>!</h4>
+                            <h4 className="username" style={{color: "#FFFFFF"}}>Welcome <b style={{color: "#AAAAAA",
+                                                                                                   overflowWrap: "break-word",
+                                                                                                   wordWrap: "break-word",
+                                                                                                   hyphens: "auto"}}>{name.split(" ")[0]}</b>!</h4>
                         </div>
                         <button
                             style={{

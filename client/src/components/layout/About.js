@@ -9,10 +9,11 @@ class About extends Component {
             <Animated animationIn="fadeIn" animationOut="fadeOut">
             <Navbar />
             <div style={{ margin: "50px", marginTop: "4rem", background: "#edf4ff", padding: "15px", borderRadius: "20px"}}>
+                <Link to="/" style={{margin: "10px"}}>
+                    <i className="fa fa-arrow-left"></i> Back to home
+                </Link>
+
                 <div className="text-center">
-                    <Link to="/">
-                        <i className="fa fa-arrow-left"></i> Back to home
-                    </Link>
                     <br />
                     <h3>Welcome to CLearn!</h3>
                 </div>

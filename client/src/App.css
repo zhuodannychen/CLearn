@@ -24,6 +24,16 @@
 }
 
 @media screen and (max-width: 850px) {
+    .grid-hanzi {
+        font-size: 19px;
+        margin: 0;
+    }
+    
+    .grid-id {
+        font-size: 6px;
+        margin: 0;
+    }
+
     .inp-field input {
         border: 0;
         outline: 0;
@@ -40,19 +50,19 @@
     } 
 
     .char-display h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .char-display h4 {
-        font-size: 25px;
+        font-size: 16px;
     }
 
     .char-display h6 {
-        font-size: 13px;
+        font-size: 9px;
     }
 
     .char-display a {
-        font-size: 13px;
+        font-size: 7px;
     }
 
     .username {
@@ -61,5 +71,9 @@
 
     .logout {
         font-size: 10px;
+    }
+
+    .knowledge-count {
+        font-size: 15px;
     }
 }
