@@ -40,9 +40,25 @@ class Landing extends Component {
                         borderRadius: "3px",
                         letterSpacing: "1.5px"
                         }}
-                        className="btn btn-primary"
+                        className="btn btn-dark"
                     >
                         Register
+                    </Link>
+                </div>
+
+                <br />
+
+                <div className="text-center">
+                    <Link 
+                        to="/test"
+                        style={{
+                        width: "140px",
+                        borderRadius: "3px",
+                        letterSpacing: "1.5px"
+                        }}
+                        className="btn btn-secondary"
+                    >
+                        Quick Test
                     </Link>
                 </div>
 

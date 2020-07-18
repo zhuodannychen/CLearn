@@ -36,6 +36,9 @@ class About extends Component {
                     <br />
                     <br />
                     Memorizing all of these Chinese characters can seem daunting, so CLearn is here to help you to achieve your goal!
+                    <br />
+                    <br />
+                    If you have any questions or feedback, please email <a href="mailto:zhuodannychen@gmail.com">zhuodannychen@gmail.com</a>
                 </p>
             </div>
             </Animated>
